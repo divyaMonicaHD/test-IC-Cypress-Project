@@ -1,0 +1,23 @@
+
+
+
+   
+  {
+   
+   "chromeWebSecurity": false
+   , "reporter": "mochawesome",
+"reporterOptions": {
+  "charts": false,
+  "overwrite": false,
+  "html": true,
+  "json": true,
+  "vedios":false,
+ "reportDir": "cypress/reports"
+}
+  }
+
+
+
+
+
+

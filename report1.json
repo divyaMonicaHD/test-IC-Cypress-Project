@@ -1,0 +1,576 @@
+{
+  "stats": {
+    "suites": 8,
+    "tests": 16,
+    "passes": 0,
+    "pending": 0,
+    "failures": 16,
+    "start": "2022-03-13T11:22:51.499Z",
+    "end": "2022-03-13T11:34:20.849Z",
+    "duration": 26358,
+    "testsRegistered": 16,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c80d8c62-d364-4fe6-a386-e38ee814c7a8",
+      "title": "",
+      "fullFile": "cypress/integration/CSAUser.js",
+      "file": "cypress/integration/CSAUser.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "CSA User module",
+          "fullTitle": "CSA User module",
+          "timedOut": null,
+          "duration": 1834,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://hd-csadmin-devtest.azurewebsites.net/');\ncy.get('.btn').click();\ncy.get('p > a').click();",
+          "err": {
+            "message": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation",
+            "estack": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation\n    at onPageLoadErr (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:158512:76)\n    at HTMLIFrameElement.<anonymous> (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:173129:15)\n    at HTMLIFrameElement.dispatch (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113217:27)\n    at HTMLIFrameElement.elemData.handle (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113025:28)\nFrom Your Spec Code:\n    at Context.eval (https://hd-csadmin-devtest.azurewebsites.net/__cypress/tests?p=cypress\\integration\\CSAUser.js:103:6)",
+            "diff": null
+          },
+          "uuid": "f2f22911-76ea-457a-8277-0184a86a3e60",
+          "parentUUID": "c80d8c62-d364-4fe6-a386-e38ee814c7a8",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "CSA add User",
+          "fullTitle": "CSA add User",
+          "timedOut": null,
+          "duration": 1011,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://hd-csadmin-devtest.azurewebsites.net/');\ncy.get('.btn').click();\ncy.get('p > a').click();\ncy.get('[href=\"/UserView?act=add\"]');",
+          "err": {
+            "message": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation",
+            "estack": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation\n    at onPageLoadErr (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:158512:76)\n    at HTMLIFrameElement.<anonymous> (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:173129:15)\n    at HTMLIFrameElement.dispatch (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113217:27)\n    at HTMLIFrameElement.elemData.handle (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113025:28)\nFrom Your Spec Code:\n    at Context.eval (https://hd-csadmin-devtest.azurewebsites.net/__cypress/tests?p=cypress\\integration\\CSAUser.js:108:6)",
+            "diff": null
+          },
+          "uuid": "e6eb393b-103c-4c26-aa86-a0fa55467dbd",
+          "parentUUID": "c80d8c62-d364-4fe6-a386-e38ee814c7a8",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "f2f22911-76ea-457a-8277-0184a86a3e60",
+        "e6eb393b-103c-4c26-aa86-a0fa55467dbd"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 2845,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "9948c1cf-19cd-420e-8c1e-eaec53f95135",
+      "title": "",
+      "fullFile": "cypress/integration/CSARoleProj.js",
+      "file": "cypress/integration/CSARoleProj.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "CSA Role module",
+          "fullTitle": "CSA Role module",
+          "timedOut": null,
+          "duration": 2996,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://hd-csadmin-devtest.azurewebsites.net/');\ncy.get('.btn').click();\ncy.get(':nth-child(3) > a').click();",
+          "err": {
+            "message": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation",
+            "estack": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation\n    at onPageLoadErr (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:158512:76)\n    at HTMLIFrameElement.<anonymous> (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:173129:15)\n    at HTMLIFrameElement.dispatch (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113217:27)\n    at HTMLIFrameElement.elemData.handle (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113025:28)\nFrom Your Spec Code:\n    at Context.eval (https://hd-csadmin-devtest.azurewebsites.net/__cypress/tests?p=cypress\\integration\\CSARoleProj.js:103:6)",
+            "diff": null
+          },
+          "uuid": "ef8beb12-253c-4c3f-8233-a1b75c97e0bb",
+          "parentUUID": "9948c1cf-19cd-420e-8c1e-eaec53f95135",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "CSA Add role",
+          "fullTitle": "CSA Add role",
+          "timedOut": null,
+          "duration": 759,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://hd-csadmin-devtest.azurewebsites.net/');\ncy.get('.btn').click();\ncy.get(':nth-child(3) > a').click();\ncy.get('[href=\"/RoleView?act=add\"]');",
+          "err": {
+            "message": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation",
+            "estack": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation\n    at onPageLoadErr (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:158512:76)\n    at HTMLIFrameElement.<anonymous> (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:173129:15)\n    at HTMLIFrameElement.dispatch (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113217:27)\n    at HTMLIFrameElement.elemData.handle (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113025:28)\nFrom Your Spec Code:\n    at Context.eval (https://hd-csadmin-devtest.azurewebsites.net/__cypress/tests?p=cypress\\integration\\CSARoleProj.js:108:6)",
+            "diff": null
+          },
+          "uuid": "db0c2533-14aa-4fde-8ef6-e99cbcc220b8",
+          "parentUUID": "9948c1cf-19cd-420e-8c1e-eaec53f95135",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "ef8beb12-253c-4c3f-8233-a1b75c97e0bb",
+        "db0c2533-14aa-4fde-8ef6-e99cbcc220b8"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 3755,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "588b7ee1-b27f-4b4b-8ae4-a52afcee245a",
+      "title": "",
+      "fullFile": "cypress/integration/CSAUser.js",
+      "file": "cypress/integration/CSAUser.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "CSA User module",
+          "fullTitle": "CSA User module",
+          "timedOut": null,
+          "duration": 1241,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://hd-csadmin-devtest.azurewebsites.net/');\ncy.get('.btn').click();\ncy.get('p > a').click();",
+          "err": {
+            "message": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation",
+            "estack": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation\n    at onPageLoadErr (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:158512:76)\n    at HTMLIFrameElement.<anonymous> (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:173129:15)\n    at HTMLIFrameElement.dispatch (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113217:27)\n    at HTMLIFrameElement.elemData.handle (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113025:28)\nFrom Your Spec Code:\n    at Context.eval (https://hd-csadmin-devtest.azurewebsites.net/__cypress/tests?p=cypress\\integration\\CSAUser.js:103:6)",
+            "diff": null
+          },
+          "uuid": "d6fd0960-8cd6-46d8-b55b-88f6fc23f7c4",
+          "parentUUID": "588b7ee1-b27f-4b4b-8ae4-a52afcee245a",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "CSA add User",
+          "fullTitle": "CSA add User",
+          "timedOut": null,
+          "duration": 947,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://hd-csadmin-devtest.azurewebsites.net/');\ncy.get('.btn').click();\ncy.get('p > a').click();\ncy.get('[href=\"/UserView?act=add\"]');",
+          "err": {
+            "message": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation",
+            "estack": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation\n    at onPageLoadErr (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:158512:76)\n    at HTMLIFrameElement.<anonymous> (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:173129:15)\n    at HTMLIFrameElement.dispatch (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113217:27)\n    at HTMLIFrameElement.elemData.handle (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113025:28)\nFrom Your Spec Code:\n    at Context.eval (https://hd-csadmin-devtest.azurewebsites.net/__cypress/tests?p=cypress\\integration\\CSAUser.js:108:6)",
+            "diff": null
+          },
+          "uuid": "5c8dd8a4-ba7d-43d2-be67-7ace1284bf10",
+          "parentUUID": "588b7ee1-b27f-4b4b-8ae4-a52afcee245a",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "d6fd0960-8cd6-46d8-b55b-88f6fc23f7c4",
+        "5c8dd8a4-ba7d-43d2-be67-7ace1284bf10"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 2188,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "5d5b2b2b-1fc9-48ff-8d9d-4a9311aac644",
+      "title": "",
+      "fullFile": "cypress/integration/CSARoleProj.js",
+      "file": "cypress/integration/CSARoleProj.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "CSA Role module",
+          "fullTitle": "CSA Role module",
+          "timedOut": null,
+          "duration": 3519,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://hd-csadmin-devtest.azurewebsites.net/');\ncy.get('.btn').click();\ncy.get(':nth-child(3) > a').click();",
+          "err": {
+            "message": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation",
+            "estack": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation\n    at onPageLoadErr (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:158512:76)\n    at HTMLIFrameElement.<anonymous> (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:173129:15)\n    at HTMLIFrameElement.dispatch (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113217:27)\n    at HTMLIFrameElement.elemData.handle (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113025:28)\nFrom Your Spec Code:\n    at Context.eval (https://hd-csadmin-devtest.azurewebsites.net/__cypress/tests?p=cypress\\integration\\CSARoleProj.js:103:6)",
+            "diff": null
+          },
+          "uuid": "9e0d5293-2508-4468-81f8-cf233c69af7a",
+          "parentUUID": "5d5b2b2b-1fc9-48ff-8d9d-4a9311aac644",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "CSA Add role",
+          "fullTitle": "CSA Add role",
+          "timedOut": null,
+          "duration": 795,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://hd-csadmin-devtest.azurewebsites.net/');\ncy.get('.btn').click();\ncy.get(':nth-child(3) > a').click();\ncy.get('[href=\"/RoleView?act=add\"]');",
+          "err": {
+            "message": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation",
+            "estack": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation\n    at onPageLoadErr (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:158512:76)\n    at HTMLIFrameElement.<anonymous> (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:173129:15)\n    at HTMLIFrameElement.dispatch (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113217:27)\n    at HTMLIFrameElement.elemData.handle (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113025:28)\nFrom Your Spec Code:\n    at Context.eval (https://hd-csadmin-devtest.azurewebsites.net/__cypress/tests?p=cypress\\integration\\CSARoleProj.js:108:6)",
+            "diff": null
+          },
+          "uuid": "3c264904-b754-4030-9d4b-0b53931e7d13",
+          "parentUUID": "5d5b2b2b-1fc9-48ff-8d9d-4a9311aac644",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "9e0d5293-2508-4468-81f8-cf233c69af7a",
+        "3c264904-b754-4030-9d4b-0b53931e7d13"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 4314,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "08e334ff-0896-43c4-9a87-43460327c274",
+      "title": "",
+      "fullFile": "cypress/integration/CSAUser.js",
+      "file": "cypress/integration/CSAUser.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "CSA User module",
+          "fullTitle": "CSA User module",
+          "timedOut": null,
+          "duration": 1290,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://hd-csadmin-devtest.azurewebsites.net/');\ncy.get('.btn').click();\ncy.get('p > a').click();",
+          "err": {
+            "message": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation",
+            "estack": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation\n    at onPageLoadErr (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:158512:76)\n    at HTMLIFrameElement.<anonymous> (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:173129:15)\n    at HTMLIFrameElement.dispatch (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113217:27)\n    at HTMLIFrameElement.elemData.handle (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113025:28)\nFrom Your Spec Code:\n    at Context.eval (https://hd-csadmin-devtest.azurewebsites.net/__cypress/tests?p=cypress\\integration\\CSAUser.js:103:6)",
+            "diff": null
+          },
+          "uuid": "145eeb65-8ac5-47a4-8315-c51b3c90d692",
+          "parentUUID": "08e334ff-0896-43c4-9a87-43460327c274",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "CSA add User",
+          "fullTitle": "CSA add User",
+          "timedOut": null,
+          "duration": 905,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://hd-csadmin-devtest.azurewebsites.net/');\ncy.get('.btn').click();\ncy.get('p > a').click();\ncy.get('[href=\"/UserView?act=add\"]');",
+          "err": {
+            "message": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation",
+            "estack": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation\n    at onPageLoadErr (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:158512:76)\n    at HTMLIFrameElement.<anonymous> (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:173129:15)\n    at HTMLIFrameElement.dispatch (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113217:27)\n    at HTMLIFrameElement.elemData.handle (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113025:28)\nFrom Your Spec Code:\n    at Context.eval (https://hd-csadmin-devtest.azurewebsites.net/__cypress/tests?p=cypress\\integration\\CSAUser.js:108:6)",
+            "diff": null
+          },
+          "uuid": "897bfa7c-8b2d-4e40-884f-ad164efc0a81",
+          "parentUUID": "08e334ff-0896-43c4-9a87-43460327c274",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "145eeb65-8ac5-47a4-8315-c51b3c90d692",
+        "897bfa7c-8b2d-4e40-884f-ad164efc0a81"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 2195,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "0efc959f-1140-47bd-b5a5-4df8d32a9b3f",
+      "title": "",
+      "fullFile": "cypress/integration/CSARoleProj.js",
+      "file": "cypress/integration/CSARoleProj.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "CSA Role module",
+          "fullTitle": "CSA Role module",
+          "timedOut": null,
+          "duration": 2928,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://hd-csadmin-devtest.azurewebsites.net/');\ncy.get('.btn').click();\ncy.get(':nth-child(3) > a').click();",
+          "err": {
+            "message": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation",
+            "estack": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation\n    at onPageLoadErr (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:158512:76)\n    at HTMLIFrameElement.<anonymous> (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:173129:15)\n    at HTMLIFrameElement.dispatch (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113217:27)\n    at HTMLIFrameElement.elemData.handle (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113025:28)\nFrom Your Spec Code:\n    at Context.eval (https://hd-csadmin-devtest.azurewebsites.net/__cypress/tests?p=cypress\\integration\\CSARoleProj.js:103:6)",
+            "diff": null
+          },
+          "uuid": "db66e9fd-fa67-44b4-80ce-7582891f97fa",
+          "parentUUID": "0efc959f-1140-47bd-b5a5-4df8d32a9b3f",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "CSA Add role",
+          "fullTitle": "CSA Add role",
+          "timedOut": null,
+          "duration": 705,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://hd-csadmin-devtest.azurewebsites.net/');\ncy.get('.btn').click();\ncy.get(':nth-child(3) > a').click();\ncy.get('[href=\"/RoleView?act=add\"]');",
+          "err": {
+            "message": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation",
+            "estack": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation\n    at onPageLoadErr (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:158512:76)\n    at HTMLIFrameElement.<anonymous> (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:173129:15)\n    at HTMLIFrameElement.dispatch (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113217:27)\n    at HTMLIFrameElement.elemData.handle (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113025:28)\nFrom Your Spec Code:\n    at Context.eval (https://hd-csadmin-devtest.azurewebsites.net/__cypress/tests?p=cypress\\integration\\CSARoleProj.js:108:6)",
+            "diff": null
+          },
+          "uuid": "3f63a5e5-60ac-4eeb-9660-2332154cf5b4",
+          "parentUUID": "0efc959f-1140-47bd-b5a5-4df8d32a9b3f",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "db66e9fd-fa67-44b4-80ce-7582891f97fa",
+        "3f63a5e5-60ac-4eeb-9660-2332154cf5b4"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 3633,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "4a560319-9a89-4d15-a765-dca8077dbdd7",
+      "title": "",
+      "fullFile": "cypress/integration/CSAUser.js",
+      "file": "cypress/integration/CSAUser.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "CSA User module",
+          "fullTitle": "CSA User module",
+          "timedOut": null,
+          "duration": 1846,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://hd-csadmin-devtest.azurewebsites.net/');\ncy.get('.btn').click();\ncy.get('p > a').click();",
+          "err": {
+            "message": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation",
+            "estack": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation\n    at onPageLoadErr (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:158512:76)\n    at HTMLIFrameElement.<anonymous> (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:173129:15)\n    at HTMLIFrameElement.dispatch (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113217:27)\n    at HTMLIFrameElement.elemData.handle (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113025:28)\nFrom Your Spec Code:\n    at Context.eval (https://hd-csadmin-devtest.azurewebsites.net/__cypress/tests?p=cypress\\integration\\CSAUser.js:103:6)",
+            "diff": null
+          },
+          "uuid": "5b9d9296-5335-4876-b1a5-c487c8684e35",
+          "parentUUID": "4a560319-9a89-4d15-a765-dca8077dbdd7",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "CSA add User",
+          "fullTitle": "CSA add User",
+          "timedOut": null,
+          "duration": 1073,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://hd-csadmin-devtest.azurewebsites.net/');\ncy.get('.btn').click();\ncy.get('p > a').click();\ncy.get('[href=\"/UserView?act=add\"]');",
+          "err": {
+            "message": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation",
+            "estack": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation\n    at onPageLoadErr (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:158512:76)\n    at HTMLIFrameElement.<anonymous> (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:173129:15)\n    at HTMLIFrameElement.dispatch (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113217:27)\n    at HTMLIFrameElement.elemData.handle (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113025:28)\nFrom Your Spec Code:\n    at Context.eval (https://hd-csadmin-devtest.azurewebsites.net/__cypress/tests?p=cypress\\integration\\CSAUser.js:108:6)",
+            "diff": null
+          },
+          "uuid": "3542c12e-badb-4062-b7a9-a2992bf6f8a0",
+          "parentUUID": "4a560319-9a89-4d15-a765-dca8077dbdd7",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "5b9d9296-5335-4876-b1a5-c487c8684e35",
+        "3542c12e-badb-4062-b7a9-a2992bf6f8a0"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 2919,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "bb194a08-0c96-435b-89d9-5191b8a87e9e",
+      "title": "",
+      "fullFile": "cypress/integration/CSARoleProj.js",
+      "file": "cypress/integration/CSARoleProj.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "CSA Role module",
+          "fullTitle": "CSA Role module",
+          "timedOut": null,
+          "duration": 3219,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://hd-csadmin-devtest.azurewebsites.net/');\ncy.get('.btn').click();\ncy.get(':nth-child(3) > a').click();",
+          "err": {
+            "message": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation",
+            "estack": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation\n    at onPageLoadErr (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:158512:76)\n    at HTMLIFrameElement.<anonymous> (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:173129:15)\n    at HTMLIFrameElement.dispatch (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113217:27)\n    at HTMLIFrameElement.elemData.handle (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113025:28)\nFrom Your Spec Code:\n    at Context.eval (https://hd-csadmin-devtest.azurewebsites.net/__cypress/tests?p=cypress\\integration\\CSARoleProj.js:103:6)",
+            "diff": null
+          },
+          "uuid": "902262a4-174c-4626-b3e5-ced71e778160",
+          "parentUUID": "bb194a08-0c96-435b-89d9-5191b8a87e9e",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "CSA Add role",
+          "fullTitle": "CSA Add role",
+          "timedOut": null,
+          "duration": 1290,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://hd-csadmin-devtest.azurewebsites.net/');\ncy.get('.btn').click();\ncy.get(':nth-child(3) > a').click();\ncy.get('[href=\"/RoleView?act=add\"]');",
+          "err": {
+            "message": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation",
+            "estack": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://hd-csadmin-devtest.azurewebsites.net\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin policy:\n\n  > https://hd-csadmin-devtest.azurewebsites.net\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin policy above.\n\nA new URL does not match the origin policy if the 'protocol', 'port' (if specified), and/or 'host' (unless of the same superdomain) are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.json`.\n\nhttps://on.cypress.io/cross-origin-violation\n    at onPageLoadErr (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:158512:76)\n    at HTMLIFrameElement.<anonymous> (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:173129:15)\n    at HTMLIFrameElement.dispatch (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113217:27)\n    at HTMLIFrameElement.elemData.handle (https://hd-csadmin-devtest.azurewebsites.net/__cypress/runner/cypress_runner.js:113025:28)\nFrom Your Spec Code:\n    at Context.eval (https://hd-csadmin-devtest.azurewebsites.net/__cypress/tests?p=cypress\\integration\\CSARoleProj.js:108:6)",
+            "diff": null
+          },
+          "uuid": "0cfddb23-2055-4d1f-b8cb-18aa09602888",
+          "parentUUID": "bb194a08-0c96-435b-89d9-5191b8a87e9e",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "902262a4-174c-4626-b3e5-ced71e778160",
+        "0cfddb23-2055-4d1f-b8cb-18aa09602888"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 4509,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.2"
+    },
+    "marge": {
+      "options": {
+        "charts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.1.1"
+    }
+  }
+}
